@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 2px 2px 10px hsl(216, 50%, 16%);
+}
+
+.card__image{
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__content__title{
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    padding: 20px 0; 
+    font-weight: 900;
+}
+
+.card__content__description{
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.card__content__stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card__content__price{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.card__content__price p{
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+.card__content__time{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.card__content__time p{
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.card__content__creator{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 10px;
+}
+
+.card__content__creator .white{
+    color: hsl(0, 0%, 100%);
+}
+.card__content__creator img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.attribution{
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 5px;
+}
